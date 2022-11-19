@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import Provider from "./provider";
+import Provider from "./Provider";
 
 export default function RootLayout({
   children,
@@ -11,9 +11,9 @@ export default function RootLayout({
       <head>
         <title>Netflix</title>
       </head>
-      <Provider>
-        <body>{children}</body>
-      </Provider>
+      <body>
+        <Provider>{children}</Provider>
+      </body>
     </html>
   );
 }
